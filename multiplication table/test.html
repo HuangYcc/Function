@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title> 9*9乘法表</title>
+    <link type="text/css" rel="stylesheet" href="test.css">
+
+    <script>
+
+        document.write("<h1>" + "9*9乘法表" + "</h1>");
+        document.write("<table>")
+        for (var i = 1; i <= 9; i++) {
+
+            document.write("<tr>");
+            for (var j = 1; j <= 9; j++) {
+                if (j == i) {
+                        document.write("<td style='background-color:yellow;'>");
+                        document.write(i + "*" + j + "=" + "  " +(i * j));
+                        document.write("</td>");  
+                }
+                else if (j < i) {
+                        document.write("<td>");
+                        document.write(i + "*" + j + "=" + " " + (i * j));
+                        document.write("</td>");
+                    } 
+                else {
+                    document.write("<td>");
+                    document.write("</td>");
+                }
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
